@@ -94,9 +94,9 @@ export default {
   },
 
   computed: {
-    transitioning: (hiding, opening) => hiding || opening,
-    open: (hidden, transitioning) => !hidden && !transitioning,
-    zIndex: (zIndexBase, inForeground) => inForeground ? zIndexBase : zIndexBase - 1
+    transitioning: ({hiding, opening}) => hiding || opening,
+    open: ({hidden, transitioning}) => !hidden && !transitioning,
+    zIndex: ({zIndexBase, inForeground}) => inForeground ? zIndexBase : zIndexBase - 1
   },
 
   oncreate () {
