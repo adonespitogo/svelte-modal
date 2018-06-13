@@ -3,14 +3,14 @@
   ref:modal
   class="svelte-modal"
   tabindex="-1"
-  data-center="{{ center }}"
-  data-hidden="{{ hidden }}"
-  style="z-index: {{ zIndex }}; opacity: {{ modalStyle.opacity }};"
+  data-center="{ center }"
+  data-hidden="{ hidden }"
+  style="z-index: { zIndex }; opacity: { modalStyle.opacity };"
 >
   <div
     ref:content
     class="content"
-    style="transform: scale({{ contentStyle.scale }});"
+    style="transform: scale({ contentStyle.scale });"
   >
     <slot></slot>
   </div>
